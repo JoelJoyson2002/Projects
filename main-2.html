@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Cricket</title>
+    <style>
+   
+
+        .ball-1,.ball-2,.ball-3,.ball-4,.ball-5,.ball-6{
+            height:50px;
+            width:70px;
+          
+        }
+        .ballc-1,.ballc-2,.ballc-3,.ballc-4,.ballc-5,.ballc-6{
+            height:50px;
+            width:70px;
+            
+        }
+        .ballc-1{
+            margin-left: 300px;
+        }
+        #score {
+            width: 300px; /* Adjust the width as needed */
+            height: 30px; /* Adjust the height as needed */
+            font-size: 16px; /* Increase font size for better readability */
+        }
+
+        .box {
+    width: 50px;         /* Sets the width of the box */
+    height: 20px;        /* Sets the height of the box */
+    background-color: lightblue;  /* Sets the background color of the box */
+    border: 2px solid blue;       /* Sets the border color and thickness */
+    padding: 20px;        /* Adds padding inside the box */
+   
+    margin-left:800px; 
+    margin-top: -50px;       /* Adds margin outside the box */
+}
+.box-2 {
+    width: 50px;         /* Sets the width of the box */
+    height: 20px;        /* Sets the height of the box */
+    background-color: lightblue;  /* Sets the background color of the box */
+    border: 2px solid blue;       /* Sets the border color and thickness */
+    padding: 20px;        /* Adds padding inside the box */
+   
+    margin-left:800px; 
+    margin-top: -50px;       /* Adds margin outside the box */
+}
+
+#H{
+    margin-left: 810px;
+}
+#Go{
+    height:50px;
+    margin-top:-30px;
+    width:60px;
+    
+}
+
+body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("2011-2.jpeg"); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            opacity: 0.5; 
+            z-index: -1; 
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Hand Cricket-Super Over "First user bats and then Computer for one over"</h1><br>
+    <input type="number" id="score" placeholder="Enter your Number between 1 and 6" min="1" max="6">
+   
+
+    <button class="ball-1" >Ball 1</button>
+    <button class="ball-2">Ball 2</button>
+    <button class="ball-3">Ball 3</button>
+    <button class="ball-4">Ball 4</button>
+    <button class="ball-5">Ball 5</button>
+    <button class="ball-6">Ball 6</button><br>
+    <div class="box"></div><div id="H">Your Score</div>
+    <button id="Go" onClick="change()">Go!</button><br>
+
+    <button class="ballc-1" >Ball 1 By PC</button>
+    <button class="ballc-2">Ball 2 By PC</button>
+    <button class="ballc-3">Ball 3 By PC</button>
+    <button class="ballc-4">Ball 4 By PC</button>
+    <button class="ballc-5">Ball 5 By PC</button>
+    <button class="ballc-6">Ball 6 By PC</button>
+    <div class="box-2"></div><div id="H"> Score by PC</div>
+
+     <br><br>
+     <img src="2011-2.jpeg" alt="Example Image" class="example-image">
+     <script src="index-2.js"></script>
+</body>
+</html>
